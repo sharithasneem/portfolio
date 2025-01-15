@@ -1,7 +1,6 @@
 'use client'; // Ensure framer-motion works in a Next.js client component
 import { motion } from 'framer-motion';
 import Link from 'next/link'; // Import the Link component
-import { useState } from 'react'; // Import useState for hover state management
 
 export default function Project() {
     const projects = [
