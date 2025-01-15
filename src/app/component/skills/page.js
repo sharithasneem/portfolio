@@ -67,7 +67,7 @@ export default function Skills() {
             transition={{ duration: 1, ease: "easeInOut" }}
         >
             {/* Sliding Text at the Top */}
-            <SlidingText text="USER EXPERIENCE / REACT NATIVE / UX DESIGNER / MERN STACK / EXPO / HYBRID MOBILE APP / WEB APP / WEBSITE" direction="right" />
+            <SlidingText text="USER EXPERIENCE  REACT NATIVE  UX DESIGNER  MERN STACK  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE" direction="right" />
 
             {/* Responsive Tools Grid */}
             <div className="py-8 w-full flex justify-center items-center">
@@ -89,7 +89,7 @@ export default function Skills() {
 
 
             {/* Sliding Text at the Bottom */}
-            <SlidingText text="FIGMA / REACT JS / EXPO / HYBRID MOBILE APP / WEB APP / WEBSITE / FIGMA / REACT JS / EXPO / HYBRID MOBILE APP / WEB APP / WEBSITE" direction="right" />
+            <SlidingText text="FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE  FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE" direction="right" />
         </motion.div>
     );
 }
