@@ -3,7 +3,7 @@
 import WhoamI from '../component/whoamI/page'
 import StepsGrid from '../component/workSteps/page'
 import { motion } from 'framer-motion';
-import ImageGallery from '../component/gallery/page'
+import { ImageGallery } from '../component/gallery/page'
 export default function About() {
     const text1 = "It's so nice to"
     const text2 = " I'm Shariba Thasneem :)"
