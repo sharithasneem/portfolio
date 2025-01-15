@@ -13,7 +13,7 @@ const SlidingText = ({ text, direction = "left" }) => {
         <div className="overflow-hidden w-full">
             <motion.div
                 className="text-7xl font-bold text-white whitespace-nowrap font-mono"
-                style={{ x }}
+                style={{ x }} // Apply the motion to the x-axis
             >
                 {text}
             </motion.div>
@@ -21,10 +21,10 @@ const SlidingText = ({ text, direction = "left" }) => {
     );
 };
 
-// Validate props using PropTypes
+// PropTypes for validation
 SlidingText.propTypes = {
     text: PropTypes.string.isRequired,
-    direction: PropTypes.oneOf(["left", "right"]),
+    direction: PropTypes.oneOf(["left", "right"]).isRequired,  // Ensure direction is either 'left' or 'right'
 };
 
 export default SlidingText;
