@@ -1,7 +1,7 @@
 'use client'
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import SlidingText from '../sliding/page';
+// import SlidingText from '../sliding/page';
 import reatnative from "../../../../public/reactnative.png";
 import ex from "../../../../public/ex.png";
 import bootstrap from "../../../../public/bootstrap.png";
@@ -67,10 +67,10 @@ export default function Skills() {
             transition={{ duration: 1, ease: "easeInOut" }}
         >
             {/* Sliding Text at the Top */}
-            <SlidingText
+            {/* <SlidingText
                 text="USER EXPERIENCE / REACT NATIVE / UX DESIGNER / MERN STACK / EXPO / HYBRID MOBILE APP / WEB APP"
                 direction="right"
-            />
+            /> */}
             {/* <SlidingText text="USER EXPERIENCE  REACT NATIVE  UX DESIGNER  MERN STACK  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE" direction="right" /> */}
 
             {/* Responsive Tools Grid */}
@@ -93,10 +93,10 @@ export default function Skills() {
 
 
             {/* Sliding Text at the Bottom */}
-            <SlidingText
+            {/* <SlidingText
                 text="FIGMA / REACT JS / EXPO / HYBRID MOBILE APP / WEB APP / WEBSITE"
                 direction="right"
-            />
+            /> */}
             {/* <SlidingText text="FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE  FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE" direction="right" /> */}
         </motion.div>
     );
