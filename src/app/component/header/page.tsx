@@ -1,12 +1,7 @@
 "use client"
-import { Albert_Sans } from 'next/font/google'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const albertSans = Albert_Sans({
-    weight: '300',
-    subsets: ['latin']
-})
 
 export default function Header() {
 

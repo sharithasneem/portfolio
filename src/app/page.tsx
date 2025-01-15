@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Albert_Sans } from 'next/font/google'
 import Hero from './component/hero/page'
 import Skills from './component/skills/page'

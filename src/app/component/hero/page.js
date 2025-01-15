@@ -1,9 +1,8 @@
 "use client"
 import { motion } from 'framer-motion';
-import { Space } from 'lucide-react';
 
 export default function Hero() {
-
+    const name = "I’m Shariba Thasneem,"
     return (
         <div >
             <div className="flex flex-col font-sans w-full md:flex-row h-[90vh] md:space-x-6 sm:px-16 sm:flex-row">
@@ -30,7 +29,7 @@ export default function Hero() {
                                 alt="Hero Image"
                                 className="w-24 object-contain rounded-lg"
                             />
-                            I’m Shariba Thasneem,
+                            {name}
                         </motion.h1>
 
                         <motion.p

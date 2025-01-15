@@ -5,6 +5,9 @@ import StepsGrid from '../component/workSteps/page'
 import { motion } from 'framer-motion';
 import ImageGallery from '../component/gallery/page'
 export default function About() {
+    const text1 = "It's so nice to"
+    const text2 = " I'm Shariba Thasneem :)"
+
     return (
         <div className="flex flex-col min-h-screen"> {/* Ensures full viewport height */}
             <div className="flex mb-30 w-[90vw] h-full">
@@ -20,7 +23,7 @@ export default function About() {
                         className="text-5xl font-mono text-[#671229]"
                     >
                         <p>
-                            It's so nice to <br />meet you,<br /> I'm Shariba Thasneem :)
+                            {text1}  <br />meet you,<br />{text2}
                         </p>
                     </motion.div>
 

@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function Footer() {
     const footerRef = useRef(null);
     const isInView = useInView(footerRef, { once: true }); // Trigger animation only once when in view
-
+    const text = "Thanks for reaching the bottom of this page. If you like what you see, let's connect and build something together!"
     return (
         <motion.footer className="bg-[#671229] text-white py-6 mt-[15vh] h-[40vh] flex justify-center items-center "
             ref={footerRef}
@@ -18,7 +18,7 @@ export default function Footer() {
                 {/* First Div: P Tag */}
                 <div className="mb-4 md:mb-0 w-[35vw]">
                     <p className="text-sm md:text-base font-sans" >
-                        Thanks for reaching the bottom of this page. If you like what you see, let's connect and build something together!
+                        {text}
                     </p>
                 </div>
 
