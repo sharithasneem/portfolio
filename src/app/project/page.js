@@ -49,7 +49,7 @@ export default function Project() {
         // },
     ];
 
-    const [hoveredCard, setHoveredCard] = useState(null);
+    // const [hoveredCard, setHoveredCard] = useState(null);
 
     return (
         <div className="p-16 font-sans flex justify-center items-center min-h-screen">
@@ -68,8 +68,8 @@ export default function Project() {
                                     boxShadow: "0px 15px 40px rgba(0, 0, 0, 0.2)", // Add shadow on hover
                                     transition: { duration: 0.3, ease: "easeInOut" }, // Smooth hover transition
                                 }}
-                                onMouseEnter={() => setHoveredCard(project.id)} // Set the hovered card
-                                onMouseLeave={() => setHoveredCard(null)} // Clear the hovered card
+                            // onMouseEnter={() => setHoveredCard(project.id)} // Set the hovered card
+                            // onMouseLeave={() => setHoveredCard(null)} // Clear the hovered card
                             >
                                 {/* Image Section */}
                                 <motion.img

@@ -18,7 +18,7 @@ import tailwind from "../../../../public/tailwind.png";
 import node from "../../../../public/nodejs-original.png";
 import mdb from "../../../../public/mongodb-plain-wordmark.png";
 // import aws from "../../../../public/aws.png";
-import nextjs from "../../../../public/nextjs-original-wordmark.png";
+// import nextjs from "../../../../public/nextjs-original-wordmark.png";
 import redis from "../../../../public/redis-plain-wordmark.png";
 import css from "../../../../public/css.png";
 import python from "../../../../public/python-original.png";
