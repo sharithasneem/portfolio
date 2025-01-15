@@ -100,4 +100,5 @@ export default function Skills() {
             {/* <SlidingText text="FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE  FIGMA  REACT JS  EXPO  HYBRID MOBILE APP  WEB APP  WEBSITE" direction="right" /> */}
         </motion.div>
     );
+
 }
