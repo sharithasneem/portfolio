@@ -5,12 +5,12 @@ export default function Hero() {
     const name = "I’m Shariba Thasneem,"
     return (
         <div>
-            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16">
+            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16 ">
                 <motion.div className="flex-1"
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}>
-                    <div className="relative">
+                    <div className="relative ">
                         {/* Default Image for larger screens */}
                         <img
                             src="/hey3.png"
@@ -21,14 +21,14 @@ export default function Hero() {
                         <img
                             src="/hey.png"
                             alt="Hero Image for Small Screens"
-                            className="block sm:hidden w-full max-h-[100vh] object-contain rounded-lg"
+                            className="block sm:hidden w-full max-h-[100vh]  object-contain rounded-lg"
                         />
                     </div>
                 </motion.div>
                 <div className="flex-1 md:text-left mx-6 my-10 sm:my-16 sm:px-6"> {/* Added margin on left and right */}
                     <div className="mb-[15vh] sm:mb-[10vh] "> {/* Adjusted vertical margin */}
                         <motion.h1
-                            className="text-3xl flex items-center md:text-4xl font-medium text-gray-800 space-x-4  "
+                            className="text-3xl flex items-center md:text-4xl font-medium text-gray-800 space-x-4 sm:text-2xl "
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -43,7 +43,7 @@ export default function Hero() {
                         </motion.h1>
 
                         <motion.p
-                            className="mt-4 ml-2 mr-28 text-gray-600 text-sm md:text-base"
+                            className="mt-4 mb-36 mr-6 text-gray-600 text-lg md:text-base "
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
