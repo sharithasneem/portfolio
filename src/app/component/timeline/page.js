@@ -83,7 +83,7 @@ function TimelineCard({ item, isRightAligned }) {
 
             {/* Image Section */}
             <div
-                className={`w-16 sm:w-20 rounded-full border-4 p-1 border-[#671229] border-transparent h-16 sm:h-16 ${isRightAligned ? "mr-6 sm:mr-8" : "ml-6 sm:ml-8"} flex justify-center items-center`}
+                className={`w-16 sm:w-20 rounded-full border-4 p-1 border-[#671229] border-transparent h-16 sm:h-16 ${isRightAligned ? "mr-6 sm:mr-0" : "ml-6 sm:ml-0"} flex justify-center items-center`}
             >
                 <Image
                     src={item.img}
