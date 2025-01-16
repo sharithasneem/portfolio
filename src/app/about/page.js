@@ -60,20 +60,21 @@ export default function About() {
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
+
                     <img
-                        src="m2.png"
+                        src="/m4.jpeg"
                         alt="Hero Image"
-                        className="absolute top-20 left-3 w-32 md:top-0 md:left-0 sm:w-48 h-auto bg-cover bg-center"
+                        className="absolute top-1/4 right-0 md:top-1 md:right-28 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
+                    />
+                    <img
+                        src="/m2.png"
+                        alt="Hero Image"
+                        className="absolute top-36 right-1/3 md:bottom-0 md:left-0 w-28 sm:w-40 h-auto bg-cover bg-center"
                     />
                     <img
                         src="/me1.png"
                         alt="Hero Image"
-                        className="absolute top-1/4 right-0 md:top-1/4 md:right-0 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
-                    />
-                    <img
-                        src="/m4.png"
-                        alt="Hero Image"
-                        className="absolute top-36 right-1/3 md:bottom-0 md:left-20 w-28 sm:w-40 h-auto bg-cover bg-center"
+                        className="absolute top-20 left-3 w-32 md:top-60 md:left-64 sm:w-32 h-auto bg-cover bg-center"
                     />
                 </motion.div>
             </div>
