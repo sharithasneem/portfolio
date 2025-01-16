@@ -10,7 +10,7 @@ export default function Hero() {
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}>
-                    <div className="relative mt-[30vh] md:mt-0 ">
+                    <div className="relative mt-[20vh] md:mt-0 ">
                         {/* Default Image for larger screens */}
                         <img
                             src="/hey3.png"
