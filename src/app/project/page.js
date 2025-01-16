@@ -48,7 +48,7 @@ export default function Project() {
                     <div key={project.id} className="flex flex-col items-start mb-10"> {/* Align to start */}
                         <Link href={project.link}>
                             <motion.div
-                                className="relative w-full h-[45vh] bg-gray-200 rounded-xl shadow-md overflow-hidden cursor-pointer"
+                                className="relative w-full h-auto bg-gray-200 rounded-xl shadow-md overflow-hidden cursor-pointer"
                                 initial={{ opacity: 0, y: 50 }} // Initial hidden state
                                 whileInView={{ opacity: 1, y: 0 }} // Animate when in view
                                 transition={{ duration: 0.6, ease: "easeInOut" }} // Animation properties
