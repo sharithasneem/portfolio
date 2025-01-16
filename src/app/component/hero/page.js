@@ -5,7 +5,7 @@ export default function Hero() {
     const name = "I’m Shariba Thasneem,"
     return (
         <div>
-            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16 sm:mt-40 ">
+            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16  ">
                 <motion.div className="flex-1"
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
@@ -51,7 +51,7 @@ export default function Hero() {
                             An enthusiastic professional specialized in <span className="font-bold">React Full-Stack</span> development and <span className="font-bold">UX Design</span>, who loves solving complex problems with creativity and innovation.
                         </motion.p>
                     </div>
-                    <motion.div className="flex flex-1 w-[50vw] justify-center sm:justify-end flex-col "
+                    <motion.div className="flex flex-1 w-[95vw] justify-center sm:justify-end flex-col md:w-[50vw] "
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}>

@@ -8,15 +8,13 @@ import coursera from "../../../../public/coursera.jpg";
 import citriot from "../../../../public/citriot.webp";
 import gomo from "../../../../public/gomo.png";
 
-
-
 const timelineData = [
     {
         title: "BSc in Mathematics, Electronics, and Computer Science",
         date: "2018 - 2021",
         img: sjc,
         place: "St.Joseph's College",
-        description: "Developed a strong foundation in mathematical principles, electronic systems, and computer science concepts.Built a solid base for advanced studies in computer Science.",
+        description: "Developed a strong foundation in mathematical principles, electronic systems, and computer science concepts. Built a solid base for advanced studies in computer Science.",
     },
     {
         title: "MSc in Computer Science",
@@ -28,16 +26,16 @@ const timelineData = [
     {
         title: "Google UX Design Professional Certificate",
         img: coursera,
-        date: "jun 2023 - oct 2023",
+        date: "Jun 2023 - Oct 2023",
         place: "Issued by Google",
-        description: "Specialized in UI/UX design by enrolling in a dedicated course to build a strong foundation, as I was new to the field."
+        description: "Specialized in UI/UX design by enrolling in a dedicated course to build a strong foundation, as I was new to the field.",
     },
     {
         title: "UX Designer Intern",
         img: gomo,
         date: "Jan 2023 - Apr 2023",
         place: "Gomobites LLP – remote",
-        description: "Actively contributed to iterative design and redesign processes, enhancing user interfaces to improve overall user experiences. Translated designs into functional code using JavaScript while collaborating with cross-functional teams to ensure seamless implementation."
+        description: "Actively contributed to iterative design and redesign processes, enhancing user interfaces to improve overall user experiences. Translated designs into functional code using JavaScript while collaborating with cross-functional teams to ensure seamless implementation.",
     },
     {
         title: "Full Stack Developer",
@@ -50,10 +48,11 @@ const timelineData = [
 
 export default function Timeline() {
     return (
-        <div className="text-[#262626] py-20 px-6  font-sans flex flex-col items-center">
-            <h1 className="text-2xl font-bold mb-12 font-sans">My Journey</h1>
+        <div className="text-[#262626] py-10 sm:py-20 px-4 sm:px-6 font-sans flex flex-col items-center">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12">My Journey</h1>
             <div className="relative w-full max-w-3xl">
-                <div className="absolute w-1 bg-[#262626] h-full left-1/2 transform -translate-x-1/2"></div>
+                {/* Timeline Line behind the divs */}
+                <div className="absolute w-[2px] sm:w-[2px] bg-[#262626] h-full left-1/2 transform -translate-x-1/2 z-0"></div>
                 {timelineData.map((item, index) => (
                     <TimelineCard key={index} item={item} isRightAligned={index % 2 === 0} />
                 ))}
@@ -68,32 +67,32 @@ function TimelineCard({ item, isRightAligned }) {
 
     return (
         <motion.div
-            className={`mb-8 flex ${isRightAligned ? "flex-row-reverse" : "flex-row"} items-center`}
+            className={`mb-6 sm:mb-8 flex ${isRightAligned ? "flex-row-reverse" : "flex-row"} items-center w-full relative z-10`}
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
             ref={cardRef}
         >
-            <div className="bg-[#FEE9EE] rounded-lg shadow-lg p-6 max-w-sm">
-                <h2 className="text-lg font-bold text-[#262626]">{item.title}</h2>
-                <p className="text-sm text-[#262626]">{item.place}</p>
-                <p className="text-sm text-[#262626]">{item.date}</p>
-                <p className="text-[#262626] mt-2">{item.description}</p>
+            {/* Card Section */}
+            <div className="bg-[#FEE9EE] rounded-lg shadow-lg p-4 sm:p-6 max-w-sm sm:max-w-md w-full">
+                <h2 className="text-base sm:text-lg font-bold text-[#262626]">{item.title}</h2>
+                <p className="text-xs sm:text-sm text-[#262626]">{item.place}</p>
+                <p className="text-xs sm:text-sm text-[#262626]">{item.date}</p>
+                <p className="text-[#262626] mt-2 text-xs sm:text-sm">{item.description}</p>
             </div>
+
+            {/* Image Section */}
             <div
-                className={`w-16  rounded-full border-4 p-1 border-[#671229] h-16 ${isRightAligned ? "mr-6" : "ml-6"} flex justify-center items-center`}
+                className={`w-16 sm:w-20 rounded-full border-4 p-1 border-[#671229] border-transparent h-16 sm:h-16 ${isRightAligned ? "mr-6 sm:mr-8" : "ml-6 sm:ml-8"} flex justify-center items-center`}
             >
                 <Image
                     src={item.img}
                     alt={`${item.title} icon`}
-
-                    className="w-full h-full object-contain rounded-full"
+                    className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-full"
                 />
-
-                {/* <div className="text-5xl mb-4">{item.icon}</div> */}
-
             </div>
+
+
         </motion.div>
     );
 }
-
