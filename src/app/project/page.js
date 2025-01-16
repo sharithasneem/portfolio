@@ -9,7 +9,7 @@ export default function Project() {
             title: "Oneness",
             description: "Find the near by Mosque ",
             image: "/oneness.png", // Replace with your image path
-            link: "/project-1", // Add the link for navigation
+            link: "/projectDetails", // Add the link for navigation
         },
         {
             id: 2,
@@ -42,33 +42,39 @@ export default function Project() {
     ];
 
     return (
-        <div className="p-4 sm:p-8 md:p-16 font-sans flex justify-center items-center min-h-screen">
+        <div className="p-4 sm:p-8 md:p-16 font-sans flex justify-center  min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full"> {/* Grid layout */}
                 {projects.map((project) => (
                     <div key={project.id} className="flex flex-col items-start mb-10"> {/* Align to start */}
-                        <Link href={project.link}>
+                        <Link
+                            href={{
+                                pathname: "/projectDetails", // Navigate to the same screen
+                                query: {
+                                    id: project.id, // Pass project details
+                                },
+                            }}
+                        >
                             <motion.div
                                 className="relative w-full h-auto bg-gray-200 rounded-xl shadow-md overflow-hidden cursor-pointer"
-                                initial={{ opacity: 0, y: 50 }} // Initial hidden state
-                                whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-                                transition={{ duration: 0.6, ease: "easeInOut" }} // Animation properties
-                                viewport={{ once: true }} // Trigger animation once when in view
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, ease: "easeInOut" }}
+                                viewport={{ once: true }}
                                 whileHover={{
-                                    scale: 1.05, // Slightly enlarge the card
-                                    boxShadow: "0px 15px 40px rgba(0, 0, 0, 0.2)", // Add shadow on hover
-                                    transition: { duration: 0.3, ease: "easeInOut" }, // Smooth hover transition
+                                    scale: 1.05,
+                                    boxShadow: "0px 15px 40px rgba(0, 0, 0, 0.2)",
+                                    transition: { duration: 0.3, ease: "easeInOut" },
                                 }}
                             >
-                                {/* Image Section */}
                                 <motion.img
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover rounded-xl"
-                                    initial={{ opacity: 0 }} // Start with opacity 0
-                                    animate={{ opacity: 1 }} // Animate to opacity 1
-                                    transition={{ duration: 1.5, ease: "easeInOut" }} // Smooth transition
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 1.5, ease: "easeInOut" }}
                                     whileHover={{
-                                        scale: 1.1, // Slight zoom-in effect for the image
+                                        scale: 1.1,
                                         transition: { duration: 0.3, ease: "easeInOut" },
                                     }}
                                 />
