@@ -39,22 +39,13 @@ export default function Project() {
             image: "/weone.png", // Replace with your image path
             link: "/project-5",
         },
-        // {
-        //     id: 5,
-        //     title: "weone",
-        //     description: "Brief description of Project 5.",
-        //     image: "/weone.png", // Replace with your image path
-        //     link: "/project-5",
-        // },
     ];
 
-    // const [hoveredCard, setHoveredCard] = useState(null);
-
     return (
-        <div className="p-16 font-sans flex justify-center items-center min-h-screen">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10"> {/* Use a grid layout */}
+        <div className="p-4 sm:p-8 md:p-16 font-sans flex justify-center items-center min-h-screen">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full"> {/* Grid layout */}
                 {projects.map((project) => (
-                    <div key={project.id} className="flex flex-col items-start mb-20"> {/* Align to start */}
+                    <div key={project.id} className="flex flex-col items-start mb-10"> {/* Align to start */}
                         <Link href={project.link}>
                             <motion.div
                                 className="relative w-full h-[45vh] bg-gray-200 rounded-xl shadow-md overflow-hidden cursor-pointer"
@@ -67,8 +58,6 @@ export default function Project() {
                                     boxShadow: "0px 15px 40px rgba(0, 0, 0, 0.2)", // Add shadow on hover
                                     transition: { duration: 0.3, ease: "easeInOut" }, // Smooth hover transition
                                 }}
-                            // onMouseEnter={() => setHoveredCard(project.id)} // Set the hovered card
-                            // onMouseLeave={() => setHoveredCard(null)} // Clear the hovered card
                             >
                                 {/* Image Section */}
                                 <motion.img
@@ -83,28 +72,13 @@ export default function Project() {
                                         transition: { duration: 0.3, ease: "easeInOut" },
                                     }}
                                 />
-                                {/* Hover Button */}
-                                {/* {hoveredCard === project.id && (
-                                    <motion.div
-                                        className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 rounded-3xl"
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                    >
-                                        <button
-                                            className="px-6 py-3 bg-white bg-opacity-30 text-white font-bold rounded-lg shadow-lg hover:bg-opacity-50 transition"
-                                        >
-                                            View More
-                                        </button>
-                                    </motion.div>
-                                )} */}
                             </motion.div>
                         </Link>
 
                         {/* Text Below the Div */}
                         <div className="mt-2"> {/* Adjust margin-top for spacing */}
-                            <h3 className="font-bold text-xl">{project.title}</h3>
-                            <p className="text-gray-600">{project.description}</p>
+                            <h3 className="font-bold text-lg md:text-xl">{project.title}</h3>
+                            <p className="text-gray-600 text-sm md:text-base">{project.description}</p>
                         </div>
                     </div>
                 ))}

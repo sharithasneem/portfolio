@@ -15,11 +15,13 @@ export default function Hero() {
                         <img
                             src="/hey3.png"
                             alt="Hero Image"
+                            loading="lazy"
                             className="hidden sm:block w-auto max-h-[90vh] object-contain rounded-lg"
                         />
                         {/* Alternative Image for small screens */}
                         <img
                             src="/hey.png"
+                            loading="lazy"
                             alt="Hero Image for Small Screens"
                             className="block sm:hidden w-full max-h-[100vh]  object-contain rounded-lg"
                         />
