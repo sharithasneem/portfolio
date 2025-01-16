@@ -21,7 +21,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-3xl md:text-5xl font-mono text-[#671229]"
+                        className="text-4xl mt-[50vh] md:text-5xl font-mono text-[#671229]"
                     >
                         <p>
                             {text1}  <br />meet you,<br />{text2}
@@ -68,12 +68,12 @@ export default function About() {
                     <img
                         src="/me1.png"
                         alt="Hero Image"
-                        className="absolute top-1/4 right-14 md:top-1/4 md:right-4 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
+                        className="absolute top-1/4 right-4 md:top-1/4 md:right-4 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
                     />
                     <img
                         src="/m4.png"
                         alt="Hero Image"
-                        className="absolute top-36 right-1/2 md:bottom-0 md:left-1/4 w-28 sm:w-40 h-auto bg-cover bg-center"
+                        className="absolute top-36 right-1/3 md:bottom-0 md:left-1/4 w-28 sm:w-40 h-auto bg-cover bg-center"
                     />
                 </motion.div>
             </div>
