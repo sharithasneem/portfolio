@@ -12,7 +12,7 @@ export default function WhoAmI() {
         <div className="flex flex-col items-start justify-start p-8 min-h-screen mt-36 font-sans ">
             {/* Heading */}
             <motion.h1
-                className="text-2xl  text-gray-800 mb-16 mt-28"
+                className="text-xl md:text-2xl text-gray-800 mb-16 mt-28"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -24,7 +24,7 @@ export default function WhoAmI() {
 
             {/* Paragraphs */}
             <motion.p
-                className="text-2xl  text-gray-600 my-4"
+                className="text-xl md:text-2xl  text-gray-600 my-4"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -33,7 +33,7 @@ export default function WhoAmI() {
                 {para1}
             </motion.p>
             <motion.p
-                className="text-2xl  text-gray-600 my-4"
+                className="text-xl md:text-2xl  text-gray-600 my-4"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
@@ -42,7 +42,7 @@ export default function WhoAmI() {
                 {para2}
             </motion.p>
             <motion.p
-                className="text-2xl  text-gray-600 my-4"
+                className="text-xl md:text-2xl  text-gray-600 my-4"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
@@ -51,7 +51,7 @@ export default function WhoAmI() {
                 {para3}
             </motion.p>
             <motion.p
-                className="text-2xl  text-gray-600 my-4"
+                className="text-xl md:text-2xl  text-gray-600 my-4"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
