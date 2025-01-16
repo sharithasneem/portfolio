@@ -10,7 +10,7 @@ export default function Hero() {
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}>
-                    <div className="relative mt-[20vh] md:mt-0 ">
+                    <div className="relative mt-[23vh] mb-6 md:mt-0 md:mb-0 ">
                         {/* Default Image for larger screens */}
                         <img
                             src="/hey3.png"
@@ -27,7 +27,7 @@ export default function Hero() {
                         />
                     </div>
                 </motion.div>
-                <div className="flex-1 md:text-left mx-4 my-10 sm:my-16 sm:px-6"> {/* Added margin on left and right */}
+                <div className="flex-1 md:text-left mx-4 my-10  sm:my-16 sm:px-6"> {/* Added margin on left and right */}
                     <div className="mb-[15vh] sm:mb-[10vh] "> {/* Adjusted vertical margin */}
                         <motion.h1
                             className="text-2xl flex items-center md:text-4xl font-medium text-gray-800 space-x-4 sm:text-2xl "
