@@ -21,7 +21,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-2xl mt-[30vh] md:mt-0 md:text-5xl font-mono text-[#671229]"
+                        className="text-3xl mt-[30vh] md:mt-0 md:text-5xl font-mono text-[#671229]"
                     >
                         <p>
                             {text1}  <br />meet you,<br />{text2}
