@@ -75,7 +75,7 @@ export default function Skills() {
 
             {/* Responsive Tools Grid */}
             <div className="py-8 w-full flex justify-center items-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-6 px-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 justify-between md:grid-cols-6 lg:grid-cols-8 gap-6 px-6">
                     {tools.map((tool, index) => (
                         <div
                             key={index}

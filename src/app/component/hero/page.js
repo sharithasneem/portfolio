@@ -5,7 +5,7 @@ export default function Hero() {
     const name = "I’m Shariba Thasneem,"
     return (
         <div>
-            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16 ">
+            <div className="flex flex-col font-sans w-full md:flex-row h-auto md:space-x-6 sm:px-16 sm:flex-row mb-12 sm:mb-16 sm:mt-40 ">
                 <motion.div className="flex-1"
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
