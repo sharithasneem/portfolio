@@ -25,10 +25,10 @@ export default function Hero() {
                         />
                     </div>
                 </motion.div>
-                <div className="flex-1 md:text-left mx-6 my-10 sm:my-16 sm:px-6"> {/* Added margin on left and right */}
+                <div className="flex-1 md:text-left mx-4 my-10 sm:my-16 sm:px-6"> {/* Added margin on left and right */}
                     <div className="mb-[15vh] sm:mb-[10vh] "> {/* Adjusted vertical margin */}
                         <motion.h1
-                            className="text-3xl flex items-center md:text-4xl font-medium text-gray-800 space-x-4 sm:text-2xl "
+                            className="text-2xl flex items-center md:text-4xl font-medium text-gray-800 space-x-4 sm:text-2xl "
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -43,7 +43,7 @@ export default function Hero() {
                         </motion.h1>
 
                         <motion.p
-                            className="mt-4 mb-36 mr-6 text-gray-600 text-lg md:text-base "
+                            className="mt-4 mb-36  text-gray-600 text-lg md:text-base "
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
@@ -51,14 +51,14 @@ export default function Hero() {
                             An enthusiastic professional specialized in <span className="font-bold">React Full-Stack</span> development and <span className="font-bold">UX Design</span>, who loves solving complex problems with creativity and innovation.
                         </motion.p>
                     </div>
-                    <motion.div className="flex flex-1 w-[35vw] justify-center sm:justify-end flex-col "
+                    <motion.div className="flex flex-1 w-[50vw] justify-center sm:justify-end flex-col "
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}>
                         <img
                             src="/arrow.png"
                             alt="Hero Image"
-                            className="h-10 w-auto object-contain rounded-lg sm:h-8 md:h-10 lg:h-12 "
+                            className="h-10 w-auto object-contain rounded-lg sm:h-6 md:h-10 lg:h-12 "
                         />
                     </motion.div>
 
