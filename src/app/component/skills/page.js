@@ -60,7 +60,7 @@ export default function Skills() {
     ];
     return (
         <motion.div
-            className="bg-[#262626] text-white py-6 mt-[20vh] mb-[20vh] h-[125vh] flex flex-col justify-between items-center"
+            className="bg-[#262626] text-white py-6 mt-[20vh] flex flex-col justify-between items-center mb-12 sm:mb-16"
             ref={footerRef}
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
