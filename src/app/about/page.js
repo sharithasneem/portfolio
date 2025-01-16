@@ -12,7 +12,7 @@ export default function About() {
             {/* Main container with responsive layout */}
             <div className="flex flex-col md:flex-row mb-30 w-[90vw] h-full space-y-10 md:space-y-0 md:space-x-10">
                 {/* Text Section */}
-                <div className="flex flex-wrap flex-col  md:p-20 md:ml-10 w-full md:w-[60vw] space-y-10">
+                <div className="flex flex-wrap flex-col p-6   md:p-20 md:ml-10 w-full md:w-[60vw] space-y-10">
                     {/* Paragraph section */}
                     <motion.div
                         style={{
@@ -21,7 +21,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-4xl mt-[30vh] md:text-5xl font-mono text-[#671229]"
+                        className="text-2xl mt-[30vh] md:mt-0 md:text-5xl font-mono text-[#671229]"
                     >
                         <p>
                             {text1}  <br />meet you,<br />{text2}
@@ -63,17 +63,17 @@ export default function About() {
                     <img
                         src="m2.png"
                         alt="Hero Image"
-                        className="absolute top-20 left-10 w-32 md:top-0 md:left-0 sm:w-48 h-auto bg-cover bg-center"
+                        className="absolute top-20 left-3 w-32 md:top-0 md:left-0 sm:w-48 h-auto bg-cover bg-center"
                     />
                     <img
                         src="/me1.png"
                         alt="Hero Image"
-                        className="absolute top-1/4 right-4 md:top-1/4 md:right-4 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
+                        className="absolute top-1/4 right-0 md:top-1/4 md:right-0 sm:right-14 w-48 sm:w-64 h-auto bg-cover bg-center"
                     />
                     <img
                         src="/m4.png"
                         alt="Hero Image"
-                        className="absolute top-36 right-1/3 md:bottom-0 md:left-1/4 w-28 sm:w-40 h-auto bg-cover bg-center"
+                        className="absolute top-36 right-1/3 md:bottom-0 md:left-20 w-28 sm:w-40 h-auto bg-cover bg-center"
                     />
                 </motion.div>
             </div>
