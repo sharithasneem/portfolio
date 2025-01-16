@@ -9,7 +9,7 @@ export default function WhoAmI() {
     const para4 = "For me, technology is more than just a career—it’s a canvas where creativity and logic come together to solve real - world problems and create impactful experiences."
 
     return (
-        <div className="flex flex-col items-start justify-start p-8 min-h-screen m-16 mt-36 font-sans ">
+        <div className="flex flex-col items-start justify-start p-8 min-h-screen mt-36 font-sans ">
             {/* Heading */}
             <motion.h1
                 className="text-2xl  text-gray-800 mb-16 mt-28"

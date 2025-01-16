@@ -48,7 +48,7 @@ export default function StepsGrid() {
     ];
 
     return (
-        <div className="m-16 font-sans">
+        <div className="font-sans">
             <motion.h1
                 className="text-2xl  text-gray-800 mb-16 mt-28 p-8"
                 initial={{ opacity: 0, x: -50 }}

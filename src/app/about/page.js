@@ -8,11 +8,11 @@ export default function About() {
     const text2 = " I'm Shariba Thasneem :)"
 
     return (
-        <div className="flex flex-col m-6 mt-[24vh]  min-h-screen"> {/* Ensures full viewport height */}
+        <div className="flex flex-col  min-h-screen"> {/* Ensures full viewport height */}
             {/* Main container with responsive layout */}
             <div className="flex flex-col md:flex-row mb-30 w-[90vw] h-full space-y-10 md:space-y-0 md:space-x-10">
                 {/* Text Section */}
-                <div className="flex flex-wrap mb-[14vh] flex-col p-6 md:p-20 md:ml-10 w-full md:w-[60vw] space-y-10">
+                <div className="flex flex-wrap flex-col p-6 md:p-20 md:ml-10 w-full md:w-[60vw] space-y-10">
                     {/* Paragraph section */}
                     <motion.div
                         style={{
@@ -39,13 +39,13 @@ export default function About() {
                             href="/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#671229] text-white mt-[10vh] mr-2 px-6 py-2 sm:px-4 sm:py-1 rounded-md text-center text-lg sm:text-sm"
+                            className="bg-[#671229] text-white  mr-2 px-6 py-2 sm:px-4 sm:py-1 rounded-md text-center text-lg sm:text-sm"
                         >
                             Resume
                         </a>
 
                         <button
-                            className="bg-white border-2 mt-[10vh] border-[#671229] text-[#262626] px-6 py-2 sm:px-4 sm:py-1 rounded-md text-center text-lg sm:text-sm"
+                            className="bg-white border-2 border-[#671229] text-[#262626] px-6 py-2 sm:px-4 sm:py-1 rounded-md text-center text-lg sm:text-sm"
                             onClick={() => window.location.href = 'https://www.linkedin.com/in/shariba-thasneem-0185781b1/'}
                         >
                             Linkedin
