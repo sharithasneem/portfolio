@@ -10,7 +10,7 @@ export default function About() {
     return (
         <div className="flex flex-col  min-h-screen"> {/* Ensures full viewport height */}
             {/* Main container with responsive layout */}
-            <div className="flex flex-col-reverse md:flex-row mb-30 w-[90vw] h-full space-y-10 md:space-y-0 md:space-x-10">
+            <div className="flex flex-col-reverse md:flex-row  w-[90vw] h-full space-y-10 md:space-y-0 md:space-x-10">
                 {/* Text Section */}
                 <div className="flex flex-wrap flex-col p-8 md:p-20 md:ml-10 w-full md:w-[40vw] space-y-10 items-center md:items-start">
                     {/* Paragraph section */}
