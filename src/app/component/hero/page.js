@@ -16,7 +16,7 @@ export default function Hero() {
                             src="/hey3.png"
                             alt="Hero Image"
                             loading="lazy"
-                            className="hidden sm:block w-auto max-h-[90vh] object-contain rounded-lg"
+                            className="hidden sm:block w-auto max-h-[95vh] object-contain rounded-lg"
                         />
                         {/* Alternative Image for small screens */}
                         <img
