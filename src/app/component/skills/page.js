@@ -42,7 +42,7 @@ export default function Skills() {
         { name: "github", icon: github },
         { name: "express", icon: ex },
         { name: "redis", icon: redis },
-        { name: "next", icon: next },
+        // { name: "next", icon: next },
         { name: "css", icon: css },
         { name: "html", icon: html5 },
         { name: "bootstrap", icon: bootstrap },
